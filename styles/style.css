@@ -268,8 +268,7 @@
   .content-section {
     grid-template-columns: 1fr 2fr;
   }
-
-  .section-wide-column {
+  .content-section.what .section__list {
     grid-column: span 3;
   }
 
@@ -311,7 +310,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section-narrow-column {
+  .content-section.why .section__list {
+    grid-column: span 2;
+  }
+
+  .content-section.how .section__list:has(.title) {
     grid-column: span 2;
   }
 
